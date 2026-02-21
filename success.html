@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: .1rem;
+  background-color: white;
+  padding-bottom: 3rem;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=tel], input[type=email] {
+  width: 100%;
+  padding: 0.9rem;
+  margin: .1rem 0 1.4rem 0; 
+  border: 1px solid black;
+  display: inline-block;
+  background: #f1f1f1;
+  font-size: 1rem;
+}
+
+/* :focus is the CSS for when the input box is selected */
+input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=radio]{
+  background-color: #ddd;
+  outline: none;
+}
+
+label {
+  font-size: 1.4rem;
+}
+
+.comment-box{
+  width: 100%;
+  height: 10rem;
+  padding: .1rem;
+  border: 1px solid black;
+  background: #f1f1f1;
+  resize: vertical;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 2rem;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 1.2rem;                  /* Makes the text larger */
+  font-weight: bold;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Radio buttons for contact preference. taken from: https://www.geeksforgeeks.org/html/html-forms/  */
+.contactPreference {
+            margin-bottom: 0.2rem;
+            margin-top: 0.2rem;
+        }
+        .contactPreference label {
+            display: inline-block;
+            margin-left: 0.02rem;
+            margin-bottom: 1rem;
+        }
+        input[type="radio"] {
+            margin-left: 2rem;
+            margin-top: -0.1rem;
+            vertical-align: middle;
+        }
+</style>
+
+<body>
+
+
+  <div class="container">
+    <h1>Success!</h1>
+    <p>
+      Thank you for submitting your tutoring request. We will contact you soon.</p>
+    <hr>
+  </div>
+
+
+
+</body>
+</html>

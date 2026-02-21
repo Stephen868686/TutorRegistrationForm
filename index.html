@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: .1rem;
+  background-color: white;
+  padding-bottom: 3rem;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=tel], input[type=email] {
+  width: 100%;
+  padding: 0.9rem;
+  margin: .1rem 0 1.4rem 0; 
+  border: 1px solid black;
+  display: inline-block;
+  background: #f1f1f1;
+  font-size: 1rem;
+}
+
+/* :focus is the CSS for when the input box is selected */
+input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=radio]{
+  background-color: #ddd;
+  outline: none;
+}
+
+label {
+  font-size: 1.4rem;
+}
+
+.comment-box{
+  width: 100%;
+  height: 10rem;
+  padding: .1rem;
+  border: 1px solid black;
+  background: #f1f1f1;
+  resize: vertical;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 2rem;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 1.2rem;                  /* Makes the text larger */
+  font-weight: bold;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Radio buttons for contact preference. taken from: https://www.geeksforgeeks.org/html/html-forms/  */
+.contactPreference {
+            margin-bottom: 0.2rem;
+            margin-top: 0.2rem;
+        }
+        .contactPreference label {
+            display: inline-block;
+            margin-left: 0.02rem;
+            margin-bottom: 1rem;
+        }
+        input[type="radio"] {
+            margin-left: 2rem;
+            margin-top: -0.1rem;
+            vertical-align: middle;
+        }
+</style>
+</head>
+<body>
+
+<form action="https://formsubmit.co/3e906d5df160bd1d6b4bf300f64154d0" method="POST">
+
+  <input type="hidden" name="_next" value="enterurl/success.html">
+
+  <div class="container">
+    <h1>Tutoring Registration Form</h1>
+    <p>
+      Hello, thank you for your interest in Chapman's Tutoring! <br>
+      Please provide some informaiton about the type of tutoring required,
+      and we will get back to you shortly.</p>
+    <hr>
+
+    <label for="name"><b>Name:</b></label>
+    <input type="text" name="contactName" id="contactName" required>
+
+    <label for="grade"><b>Grade:</b></label>
+    <input type="text" name="psw" id=Grade" required>
+
+    <label for="subject"><b>Subject & Topic for Tutoring:</b></label>
+    <input type="text" name="psw-repeat" id="subject" required>
+
+    <label for="phonenum"><b>Phone:</b></label>
+    <input type="tel" name="psw-repeat" id="phone" required>
+    
+    <label for="email"><b>Email:</b></label>
+    <input type="email" name="psw-repeat" id="contactEmail" required>
+
+    <label for="contactMethod">Preferred Method of Contact:</label>
+    <div class="contactPreference">
+        <input type="radio" name="radio1" value="Email" id="Email" required />
+        <label for="Email">Email</label>
+        <input type="radio" name="radio1" value="Phone" id="Phone" />
+        <label for="Phone">Phone</label>
+    </div>
+
+    <label for="comments"><b>Additional Comments:</b></label>
+    <textarea class="comment-box" name="comments" id="comments" required></textarea>
+    
+    <hr>
+    <p style="font-size: 0.8rem;">
+      <i><b>Privacy Policy:</b> Your information will never be sold or shared with any third parties. </i>
+    </p>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+</form>
+
+</body>
+</html>
